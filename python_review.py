@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1Rx7fTUqQU4F4Sby2ZzZrT2cBlsxzL5ef
 """
 pip install google-generativeai
+python -c "import google.generativeai as genai; print(genai.__version__)"
 
 import streamlit as st
 import google.generativeai as genai
