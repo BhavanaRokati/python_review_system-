@@ -9,10 +9,11 @@ Original file is located at
 
 import streamlit as st
 import google.generativeai as genai
+import os
 
 
 
-genai.configure(api_key="AIzaSyBkxnuIbA8tw7Q8zIdB_ZQqyhdTrWrsr2Q")
+genai.configure(api_key=os.getenv("API_KEY"))
 sys_prompt = """
 You are an advanced Python code reviewer. Your task is to analyze the given Python code, identify potential bugs, logical errors, and areas of improvement, and suggest fixes.
 
